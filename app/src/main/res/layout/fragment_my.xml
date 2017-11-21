@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--我的 开头栏 开始-->
+    <!--设置 IamgeButton id =ib_settings-->
+    <!--通知 IamgeButton id =ib_notification-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#3ca9fe">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="我的"
+            android:textColor="@color/white"/>
+
+        <ImageButton
+            android:id="@+id/ib_settings"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignRight="@id/ib_notification"
+            android:src="@drawable/ic_settings"/>
+        <ImageButton
+            android:id="@+id/ib_notification"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_notification"/>
+    </RelativeLayout>
+    <!--我的 开头栏 结束-->
+
+    <!--头像 个人信息栏 开始-->
+    <!--头像 ImageView id=iv_head-->
+    <!--个人信息 id=ll_personmessage-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#3ca9fe">
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/avatar_default"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="尚寂清"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:maxWidth="80dp"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@id/iv_head"
+            android:layout_marginLeft="80dp"/>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/ll_personmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="个人信息"
+                android:textColor="@color/white"/>
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="3dp"
+            android:src="@drawable/ic_enter" />
+        </android.support.v7.widget.LinearLayoutCompat>
+    </RelativeLayout>
+    <!--头像 个人信息栏 结束-->
+
+    <!-- 收藏 评价 账单栏开始-->
+    <!--收藏id=ll_collection-->
+    <!--评价id=ll_evaluate-->
+    <!--账单id=ll_bill-->
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            >
+
+            <!--收藏id=ll_collection-->
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/ll_collection"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_love"/>
+               <android.support.v7.widget.AppCompatTextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="收藏"
+                   android:textSize="16sp"
+                   android:textColor="@color/black_666"
+                   android:layout_marginTop="8dp"/>
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <!--评价id=ll_evaluate-->
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/ll_evaluate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_comment"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="评价"
+                    android:textSize="16sp"
+                    android:textColor="@color/black_666"
+                    android:layout_marginTop="8dp"/>
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <!--账单id=ll_bill-->
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/ll_bill"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_bill"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="账单"
+                    android:textSize="16sp"
+                    android:textColor="@color/black_666"
+                    android:layout_marginTop="8dp"/>
+            </android.support.v7.widget.LinearLayoutCompat>
+        </android.support.v7.widget.LinearLayoutCompat>
+    <!-- 收藏 评价 账单栏结束-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#eeeeee"/>
+
+    <!-- 我的钱包栏 id= ll_wallet-->
+    <!--我的余额栏 id= ll_balance-->
+    <!--我的抵用券 id= ll_discount_coupon-->
+    <!--我的积分 id=ll_point-->
+    <!--分享好友 id=ll_share-->
+    <!--客服中心 id=ll_call_center-->
+    <!--我要合作 id=ll_cooperation-->
+    <!--关于万众艺兴 id= ll_about-->
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <android.support.v7.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+       <!-- 我的钱包栏 id= ll_wallet开始-->
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/ll_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:gravity="center_vertical"
+                android:src="@drawable/ic_wallet"
+                android:layout_marginLeft="14dp"/>
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的钱包"
+                android:layout_marginLeft="14dp"
+                android:textSize="16sp"
+                android:textColor="#333333"/>
+        </android.support.v7.widget.LinearLayoutCompat>
+            <!-- 我的钱包栏 结束-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eeeeee"/>
+            <!--我的余额栏 id= ll_balance开始-->
+            <RelativeLayout
+                android:id="@+id/ll_balance"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:id="@+id/iv_balance"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:src="@drawable/ic_balance"
+                    android:layout_marginLeft="14dp"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的余额"
+                    android:layout_alignLeft="@id/iv_balance"
+                    android:layout_marginLeft="35dp"
+                    android:textSize="16sp"
+                    android:textColor="#333333"/>
+               <android.support.v7.widget.AppCompatTextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="10dp"
+                   android:text="￥0.00"/>
+            </RelativeLayout>
+            <!--我的余额栏 结束-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eeeeee"/>
+            <!--我的抵用券 id= ll_discount_coupon开始-->
+            <RelativeLayout
+                android:id="@+id/ll_discount_coupon"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:id="@+id/iv_discount_coupon"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:src="@drawable/ic_discount_coupon"
+                    android:layout_marginLeft="14dp"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的抵用券"
+                    android:layout_alignLeft="@id/iv_discount_coupon"
+                    android:layout_marginLeft="35dp"
+                    android:textSize="16sp"
+                    android:textColor="#333333"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="1张待使用"/>
+            </RelativeLayout>
+            <!--我的抵用券 结束-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eeeeee"/>
+            <!--我的积分 id=ll_point开始-->
+            <RelativeLayout
+                android:id="@+id/ll_point"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:id="@+id/iv_point"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:src="@drawable/ic_point"
+                    android:layout_marginLeft="14dp"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的积分"
+                    android:layout_alignLeft="@id/iv_point"
+                    android:layout_marginLeft="35dp"
+                    android:textSize="16sp"
+                    android:textColor="#333333"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="80分"/>
+            </RelativeLayout>
+            <!--我的积分 结束-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#eeeeee"/>
+            <!--分享好友 id=ll_share 开始-->
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/ll_share"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/ic_share"
+                    android:layout_marginLeft="14dp"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分享好友"
+                    android:layout_marginLeft="14dp"
+                    android:textSize="16sp"
+                    android:textColor="#333333"/>
+            </android.support.v7.widget.LinearLayoutCompat>
+            <!--分享好友 结束-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eeeeee"/>
+            <!--客服中心 id=ll_call_center 开始-->
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/ll_call_center"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/ic_call_center"
+                    android:layout_marginLeft="14dp"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="客服中心"
+                    android:layout_marginLeft="14dp"
+                    android:textSize="16sp"
+                    android:textColor="#333333"/>
+            </android.support.v7.widget.LinearLayoutCompat>
+            <!--客服中心 结束-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eeeeee"/>
+            <!--我要合作 id=ll_cooperation 开始-->
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/ll_cooperation"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/ic_cooperation"
+                    android:layout_marginLeft="14dp"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我要合作"
+                    android:layout_marginLeft="14dp"
+                    android:textSize="16sp"
+                    android:textColor="#333333"/>
+            </android.support.v7.widget.LinearLayoutCompat>
+            <!--我要合作 结束-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eeeeee"/>
+            <!--关于万众艺兴 id= ll_about开始-->
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/ll_about"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/ic_about"
+                    android:layout_marginLeft="14dp"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关于万众艺兴"
+                    android:layout_marginLeft="14dp"
+                    android:textSize="16sp"
+                    android:textColor="#333333"/>
+            </android.support.v7.widget.LinearLayoutCompat>
+            <!--关于万众艺兴 结束-->
+        </android.support.v7.widget.LinearLayoutCompat>
+    </ScrollView>
+</android.support.v7.widget.LinearLayoutCompat>
